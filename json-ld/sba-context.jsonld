@@ -1,0 +1,147 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "schema": "https://schema.org/",
+    "sba": "https://www.sba.gov/vocabulary/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+
+    "SmallBusinessAdministration": "schema:GovernmentOrganization",
+    "SmallBusiness": "schema:Organization",
+    "LoanProgram": "schema:FinancialProduct",
+    "LoanApplication": "schema:LoanOrCredit",
+    "LoanForgiveness": "sba:LoanForgiveness",
+    "CertificationProgram": "sba:CertificationProgram",
+    "ContractingOpportunity": "schema:JobPosting",
+    "ResearchAward": "schema:Grant",
+    "Lender": "schema:BankOrCreditUnion",
+    "DisasterLoan": "sba:DisasterLoan",
+    "SizeStandard": "sba:SizeStandard",
+
+    "aid": {
+      "@id": "schema:identifier"
+    },
+    "name": {
+      "@id": "schema:name"
+    },
+    "description": {
+      "@id": "schema:description"
+    },
+    "humanURL": {
+      "@id": "schema:url",
+      "@type": "@id"
+    },
+    "baseURL": {
+      "@id": "schema:serviceUrl",
+      "@type": "@id"
+    },
+    "loanNumber": {
+      "@id": "sba:loanNumber"
+    },
+    "loanAmount": {
+      "@id": "schema:loanRepaymentForm",
+      "@type": "xsd:decimal"
+    },
+    "loanStatus": {
+      "@id": "sba:loanStatus"
+    },
+    "programType": {
+      "@id": "sba:programType"
+    },
+    "loanType": {
+      "@id": "sba:loanType"
+    },
+    "forgivenessAmount": {
+      "@id": "sba:forgivenessAmount",
+      "@type": "xsd:decimal"
+    },
+    "sbaNumber": {
+      "@id": "sba:sbaNumber"
+    },
+    "naicsCode": {
+      "@id": "schema:naics"
+    },
+    "employerIdentificationNumber": {
+      "@id": "schema:taxID"
+    },
+    "awardAmount": {
+      "@id": "schema:amount",
+      "@type": "xsd:decimal"
+    },
+    "awardYear": {
+      "@id": "schema:startDate",
+      "@type": "xsd:gYear"
+    },
+    "agencyCode": {
+      "@id": "sba:agencyCode"
+    },
+    "phase": {
+      "@id": "sba:phase"
+    },
+    "solicitationNumber": {
+      "@id": "sba:solicitationNumber"
+    },
+    "firmName": {
+      "@id": "schema:legalName"
+    },
+    "researchInstitution": {
+      "@id": "schema:funder"
+    },
+    "hubZone": {
+      "@id": "sba:hubZone",
+      "@type": "xsd:boolean"
+    },
+    "womenOwned": {
+      "@id": "sba:womenOwned",
+      "@type": "xsd:boolean"
+    },
+    "veteranOwned": {
+      "@id": "sba:veteranOwned",
+      "@type": "xsd:boolean"
+    },
+    "serviceDisabledVeteranOwned": {
+      "@id": "sba:serviceDisabledVeteranOwned",
+      "@type": "xsd:boolean"
+    },
+    "eightAParticipant": {
+      "@id": "sba:eightAParticipant",
+      "@type": "xsd:boolean"
+    },
+    "lenderName": {
+      "@id": "sba:lenderName"
+    },
+    "lenderID": {
+      "@id": "sba:lenderID"
+    },
+    "sizeStandardEmployees": {
+      "@id": "sba:sizeStandardEmployees",
+      "@type": "xsd:integer"
+    },
+    "sizeStandardRevenue": {
+      "@id": "sba:sizeStandardRevenue",
+      "@type": "xsd:decimal"
+    },
+    "disasterType": {
+      "@id": "sba:disasterType"
+    },
+    "disasterDeclarationNumber": {
+      "@id": "sba:disasterDeclarationNumber"
+    },
+    "contentType": {
+      "@id": "schema:encodingFormat"
+    },
+    "searchQuery": {
+      "@id": "schema:query"
+    },
+    "tags": {
+      "@id": "schema:keywords"
+    },
+    "created": {
+      "@id": "schema:dateCreated",
+      "@type": "xsd:date"
+    },
+    "modified": {
+      "@id": "schema:dateModified",
+      "@type": "xsd:date"
+    }
+  }
+}
