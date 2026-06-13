@@ -1,0 +1,67 @@
+name: SBA API FinOps
+description: Financial operations considerations for integrating with U.S. Small Business Administration APIs. SBA is a U.S. federal government agency; its APIs are taxpayer-funded public services provided at no direct cost. FinOps considerations relate to infrastructure costs for consumers, indirect operational costs, and compliance obligations.
+url: https://www.sba.gov
+created: '2026-06-13'
+modified: '2026-06-13'
+
+directCosts:
+  apiAccessFees: $0
+  subscriptionFees: $0
+  perCallFees: $0
+  notes: All SBA APIs are provided free of charge. No licensing fees, subscription tiers, or per-call charges apply. SBA is a U.S. federal government agency funded by Congressional appropriations.
+
+consumerInfrastructureCosts:
+  - category: Compute
+    description: Costs for hosting applications that call SBA APIs (e.g., AWS EC2, Lambda, GCP, Azure compute).
+    estimatedRange: Varies by workload
+    notes: For lender integrations using CAFS or PPP Forgiveness API, typical fintech middleware may run $50-$500/month depending on transaction volume and hosting choice.
+
+  - category: Data Storage
+    description: Costs for storing SBA loan data, SBIR award data, or open datasets pulled from SBA APIs.
+    estimatedRange: Minimal to moderate
+    notes: SBIR award data and open loan data can be cached locally to reduce API calls. SBA FOIA loan datasets (7a/504) can be large; budget for S3 or equivalent storage at ~$0.023/GB/month.
+
+  - category: Networking / Egress
+    description: Data transfer costs when pulling large datasets from SBA APIs into cloud infrastructure.
+    estimatedRange: Low
+    notes: SBA APIs return structured JSON/XML; individual responses are small. Bulk dataset downloads from data.sba.gov are more significant but infrequent.
+
+  - category: Monitoring and Observability
+    description: Costs for monitoring API health, response times, and error rates in production integrations.
+    estimatedRange: $10-$100/month
+    notes: Standard APM tooling (Datadog, New Relic, CloudWatch) applies to lender integrations. SBA does not provide an API status dashboard; consumer-side monitoring is recommended.
+
+complianceCosts:
+  - category: Security Compliance
+    description: Lender and partner integrations with CAFS and PPP Forgiveness API require execution of an Interconnection Security Agreement (ISA) and completion of sandbox certification. This may involve legal review and engineering time.
+    estimatedEffort: 20-80 engineering hours for initial onboarding
+    notes: Budget for legal review of the ISA document and engineering time for sandbox integration and certification.
+
+  - category: Data Governance
+    description: SBA data, especially loan and borrower data, is subject to federal privacy laws and SBA data use agreements. Consumers must ensure appropriate data handling, retention, and access controls.
+    notes: Review SBA terms of use for data redistribution restrictions. PII in loan data requires HIPAA/Privacy Act-equivalent controls.
+
+  - category: Ongoing Maintenance
+    description: SBA APIs may be updated, deprecated, or experience downtime. Budget for API change management and monitoring.
+    estimatedEffort: 5-10 hours/month for active lender integrations
+    notes: Subscribe to SBA developer communications and monitor catweb.sba.gov for CAFS release notes.
+
+vendorOnboardingCosts:
+  - category: CAFS Lender Integration
+    description: Engineering effort to integrate with CAFS loan origination and servicing APIs.
+    estimatedEffort: 100-400 hours
+    supportContact: FTA@sba.gov
+    testingContact: CAFSTEST@sba.gov
+
+  - category: PPP Forgiveness API Integration
+    description: Engineering effort to integrate with PPP Loan Forgiveness API.
+    estimatedEffort: 40-160 hours
+    supportContact: developer@ussbaforgiveness.com
+    notes: Sample code available in C#, Java, and Python; reduces integration effort.
+
+summary:
+  totalDirectAPIcost: $0
+  primaryConsumerCosts: Infrastructure hosting, engineering time, compliance
+  governmentFunded: true
+  freeForPublicUse: true
+  lenderPartnerOnboardingRequired: true

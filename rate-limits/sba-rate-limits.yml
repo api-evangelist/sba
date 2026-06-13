@@ -1,0 +1,75 @@
+name: SBA API Rate Limits
+description: Rate limit information for U.S. Small Business Administration APIs. As a U.S. federal government agency, SBA APIs do not publicly document specific numeric rate limits. Rate limiting policies vary by API product and access tier.
+url: https://developer.sba.gov/about/
+created: '2026-06-13'
+modified: '2026-06-13'
+
+rateLimits:
+  - api: SBIR/STTR Awards and Solicitations API
+    tier: Public
+    authentication: None
+    limits:
+      - type: Requests
+        documented: false
+        notes: No specific rate limits are publicly documented. The API supports pagination via the rows parameter (default 100 rows per request) and a start offset parameter. Contact sba.sbir.support@decisionpointcorp.com for data access assistance.
+    formats:
+      - JSON (default)
+      - XML
+    pagination:
+      type: Offset
+      parameter: start
+      rowsParameter: rows
+      defaultRows: 100
+
+  - api: SBA Open Data API (data.sba.gov)
+    tier: Public
+    authentication: None
+    limits:
+      - type: Requests
+        documented: false
+        notes: Based on the CKAN platform. CKAN does not enforce strict public rate limits for standard data retrieval. High-volume access may be subject to fair-use policies.
+    platform: CKAN
+
+  - api: SBA.gov Content API
+    tier: Registered Developer
+    authentication: API Key
+    limits:
+      - type: Requests
+        documented: false
+        notes: Rate limits not publicly documented. Register at developer.sba.gov for access details.
+
+  - api: Capital Access Financial System (CAFS) Loan Origination API
+    tier: Credentialed Lender/Partner
+    authentication: Token + Vendor Key
+    limits:
+      - type: Requests
+        documented: false
+        notes: Rate limits are not publicly documented. This is a partner-credentialed API for SBA-approved lenders. Contact FTA@sba.gov or CAFSTEST@sba.gov for environment-specific details. Processing timelines include 2-3 business days for compliance review of applications in R0 status.
+    environments:
+      - name: Sandbox
+        url: https://sandbox.forgiveness.sba.gov/
+        purpose: Development and testing; access via sandbox credentials
+      - name: Production
+        url: https://forgiveness.sba.gov/
+        purpose: Live operations; requires sandbox certification
+
+  - api: PPP Loan Forgiveness API
+    tier: Credentialed Lender
+    authentication: Token + Vendor Key
+    limits:
+      - type: Requests
+        documented: false
+        notes: Rate limits not publicly documented. This API is restricted to SBA-approved PPP lenders. Contact developer@ussbaforgiveness.com for technical support.
+    environments:
+      - name: Sandbox
+        url: https://sandbox.forgiveness.sba.gov/
+        purpose: Development and testing
+      - name: Production
+        url: https://forgiveness.sba.gov/
+        purpose: Live loan forgiveness processing
+
+notes:
+  - SBA APIs are U.S. government services and do not publish commercial rate limit schedules
+  - Public data APIs (SBIR, Open Data) are designed for broad open access
+  - Lender/partner APIs require formal onboarding and are subject to negotiated access agreements
+  - For production system status and availability, contact the respective SBA API support teams

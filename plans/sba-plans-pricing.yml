@@ -1,0 +1,66 @@
+name: SBA API Plans and Pricing
+description: Pricing and access plans for U.S. Small Business Administration APIs. As a U.S. federal government agency, SBA APIs are publicly funded and provided at no cost to developers and the public. Different API products have different access requirements ranging from fully open to credentialed lender/partner access.
+url: https://developer.sba.gov/about/
+created: '2026-06-13'
+modified: '2026-06-13'
+
+plans:
+  - name: Public Open Access
+    description: Free, unauthenticated access to public SBA data APIs including the SBIR/STTR Awards API and SBA Open Data Portal (CKAN API). No registration required.
+    price: Free
+    currency: USD
+    billing: None
+    authentication: None
+    apis:
+      - SBIR/STTR Awards and Solicitations API
+      - SBA Open Data API
+    features:
+      - No API key required
+      - Access to public award and solicitation data
+      - JSON and XML response formats
+      - Pagination support via rows and start parameters
+      - Filter by agency, year, company, or institution
+
+  - name: SBA Content API Access
+    description: Access to the SBA.gov Content API for searching SBA.gov content resources including lenders, articles, and documents. May require registration through the SBA developer portal.
+    price: Free
+    currency: USD
+    billing: None
+    authentication: API Key (via SBA Developer Portal)
+    apis:
+      - SBA.gov Content API
+    features:
+      - Search SBA.gov content
+      - Lender search via AWS CloudSearch
+      - Document and article retrieval
+      - Personnel information endpoint
+
+  - name: Lender / Partner Integration (CAFS)
+    description: Credentialed access for SBA-approved lenders and technology vendors to integrate with the Capital Access Financial System (CAFS) for loan origination, servicing, and reporting. Requires formal vendor onboarding, Interconnection Security Agreement (ISA), and sandbox certification before production access.
+    price: Free
+    currency: USD
+    billing: None
+    authentication: Token + Vendor Key (provided after onboarding and sandbox certification)
+    apis:
+      - Capital Access Financial System (CAFS) Loan Origination API
+      - PPP Loan Forgiveness API
+    features:
+      - Sandbox environment for development and testing
+      - Production environment after certification
+      - Loan origination and servicing
+      - 1502 reporting
+      - LoanList API access
+      - Partner information management
+      - Dedicated support via FTA@sba.gov and CAFSTEST@sba.gov
+    onboarding:
+      - Contact FTA@sba.gov to begin vendor integration process
+      - Execute Interconnection Security Agreement (ISA)
+      - Complete sandbox integration and testing
+      - Receive vendor key after successful sandbox certification
+      - Obtain production tokens from Bank Account Officers
+
+notes:
+  - All SBA APIs are provided free of charge as a U.S. federal government service
+  - The SBA is funded by Congress and API access is not monetized
+  - Commercial redistribution of SBA data may be subject to terms of use
+  - Contact developer@ussbaforgiveness.com for PPP Forgiveness API support
