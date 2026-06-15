@@ -1,7 +1,7 @@
 {
   "provider": "sba",
   "url": "https://www.sba.gov/blog",
-  "fetched": "2026-06-13",
+  "fetched": "2026-06-14T20:42:17Z",
   "posts": [
     {
       "title": "SBA Support for Veteran Manufacturers",
@@ -63,5 +63,13 @@
       "date": "2024-11-25",
       "description": "Tools and guidance for creating or updating business plans during National Write a Business Plan Month."
     }
-  ]
+  ],
+  "repo": "sba",
+  "feeds": [
+    {
+      "source": "https://www.linkedin.com/company/us-small-business-administration",
+      "error": "HTTPError"
+    }
+  ],
+  "post_count": 0
 }
