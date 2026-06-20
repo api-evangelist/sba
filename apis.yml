@@ -1,7 +1,7 @@
 aid: sba
 name: Small Business Administration (SBA)
 description: The U.S. Small Business Administration provides REST APIs for accessing SBA loan data including 7(a) and 504 loan programs, SBIR/STTR award data, business licensing and size standards, disaster loan application processing, government contracting opportunities, and small business certification programs including HUBZone, 8(a), WOSB, and SDVOSB.
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 url: https://raw.githubusercontent.com/api-evangelist/sba/refs/heads/main/apis.yml
 created: '2026-06-13'
 modified: '2026-06-13'
@@ -20,7 +20,7 @@ apis:
   - aid: sba:sba-gov-content-api
     name: SBA.gov Content API
     description: A microservice API providing search access to SBA.gov content including lenders, articles, documents, and personnel. The lenders endpoint constructs queries to the AWS CloudSearch domain for lenders.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://developer.sba.gov/markdown_apis/sbagov-content.html
     baseURL: https://api.sba.gov
     tags:
@@ -37,7 +37,7 @@ apis:
   - aid: sba:cafs-loan-origination-api
     name: Capital Access Financial System (CAFS) Loan Origination API
     description: API for SBA lenders and partners to originate, service, and manage SBA 7(a) loans. Supports loan origination, status checking, compliance validation, servicing, 1502 reporting, and partner information management through the ETRAN and ELEND systems.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://catweb.sba.gov/apidocs/apidetail.cfm
     baseURL: https://catran.sba.gov
     tags:
@@ -53,7 +53,7 @@ apis:
   - aid: sba:ppp-loan-forgiveness-api
     name: PPP Loan Forgiveness API
     description: API enabling SBA-approved lenders to submit, track, and manage PPP (Paycheck Protection Program) loan forgiveness requests. Supports submission, re-submission, status lookup, document upload, loan validation, and direct forgiveness workflows.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://ussbaforgiveness.github.io/
     baseURL: https://forgiveness.sba.gov
     tags:
@@ -68,7 +68,7 @@ apis:
   - aid: sba:sbir-sttr-api
     name: SBIR/STTR Awards and Solicitations API
     description: Public API providing access to SBIR (Small Business Innovation Research) and STTR (Small Business Technology Transfer) award and solicitation data. Returns award details including firm name, agency, phase, program, award amount, and research keywords. Supports filtering by agency, year, company, and research institution.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://www.sbir.gov/api
     baseURL: https://api.www.sbir.gov
     tags:
@@ -85,7 +85,7 @@ apis:
   - aid: sba:sba-open-data-api
     name: SBA Open Data API
     description: CKAN-based open data API providing access to SBA datasets including small business size standards by NAICS code, 7(a) and 504 loan data reports (FOIA), and other SBA program data available in JSON and other formats.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://data.sba.gov/en/dataset/?res_format=API
     baseURL: https://data.sba.gov
     tags:
