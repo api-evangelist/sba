@@ -99,6 +99,8 @@ apis:
         url: https://data.sba.gov/en/dataset/?res_format=API
 
 common:
+  - type: DomainSecurity
+    url: security/sba-domain-security.yml
   - type: Website
     url: https://www.sba.gov
   - type: Documentation
