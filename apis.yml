@@ -1,6 +1,18 @@
 aid: sba
 name: Small Business Administration (SBA)
 description: The U.S. Small Business Administration provides REST APIs for accessing SBA loan data including 7(a) and 504 loan programs, SBIR/STTR award data, business licensing and size standards, disaster loan application processing, government contracting opportunities, and small business certification programs including HUBZone, 8(a), WOSB, and SDVOSB.
+deliveryModel:
+  model: unknown
+  open_source: unknown
+  commercial: true
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - pricing
+  - repository-unlicensed
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: free
   onboarding: unknown
