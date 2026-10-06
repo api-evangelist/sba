@@ -31,7 +31,7 @@ accessModel:
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/sba.png
 url: https://raw.githubusercontent.com/api-evangelist/sba/refs/heads/main/apis.yml
 created: '2026-06-13'
-modified: '2026-06-13'
+modified: '2026-10-06'
 specificationVersion: '0.23'
 type: Index
 tags:
@@ -135,6 +135,10 @@ apis:
         url: https://data.sba.gov/en/dataset/?res_format=API
 
 common:
+  - url: https://www.sba.gov/sba-newsroom/
+    type: Blog
+  - url: https://www.sba.gov/feed/
+    type: BlogRSS
   - type: DomainSecurity
     url: security/sba-domain-security.yml
   - type: Website
