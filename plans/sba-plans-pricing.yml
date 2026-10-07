@@ -1,3 +1,8 @@
+# Provenance stamped 2026-10-07 (roadmap#943): written by an API Evangelist sweep (dated 2026-06-13 by the file itself), not
+# harvested from the provider. `method: generated` so the economics campaign may replace it with a
+# dated, verbatim transcription; every figure below is unverified until it does.
+method: generated
+generated: '2026-06-13'
 name: SBA API Plans and Pricing
 description: Pricing and access plans for U.S. Small Business Administration APIs. As a U.S. federal government agency, SBA APIs are publicly funded and provided at no cost to developers and the public. Different API products have different access requirements ranging from fully open to credentialed lender/partner access.
 url: https://developer.sba.gov/about/

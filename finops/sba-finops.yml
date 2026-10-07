@@ -1,3 +1,12 @@
+# Provenance stamped 2026-10-07 (roadmap#943): written by an API Evangelist sweep (dated 2026-06-13 by the file itself), not
+# harvested from the provider. `method: generated` so the economics campaign may replace it with a
+# dated, verbatim transcription; every figure below is unverified until it does.
+# Coverage demoted 2026-10-07 (roadmap#942, PLAN.md Stage A): this file was written by an API Evangelist
+# sweep and names no billing unit, meters or pricing category read from the provider — it restates the
+# FinOps framework. It is `x-coverage: unmeasured`, and the FOCUS alignment it claimed has been removed.
+x-coverage: unmeasured
+method: generated
+generated: '2026-06-13'
 name: SBA API FinOps
 description: Financial operations considerations for integrating with U.S. Small Business Administration APIs. SBA is a U.S. federal government agency; its APIs are taxpayer-funded public services provided at no direct cost. FinOps considerations relate to infrastructure costs for consumers, indirect operational costs, and compliance obligations.
 url: https://www.sba.gov
