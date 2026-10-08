@@ -69,3 +69,28 @@ notes:
   - The SBA is funded by Congress and API access is not monetized
   - Commercial redistribution of SBA data may be subject to terms of use
   - Contact developer@ussbaforgiveness.com for PPP Forgiveness API support
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - free
+  units: []
+  plans:
+  - name: Public Open Access
+    access: other
+    model: free
+    model_how: derived
+    units: []
+    periods: []
+  - name: SBA Content API Access
+    access: other
+    model: free
+    model_how: derived
+    units: []
+    periods: []
+  - name: Lender / Partner Integration (CAFS)
+    access: other
+    model: free
+    model_how: derived
+    units: []
+    periods: []
