@@ -135,6 +135,8 @@ apis:
         url: https://data.sba.gov/en/dataset/?res_format=API
 
 common:
+  - type: Plans
+    url: plans/sba-plans-pricing.yml
   - url: https://www.sba.gov/sba-newsroom/
     type: Blog
   - url: https://www.sba.gov/feed/
