@@ -12,7 +12,7 @@
       "source": "https://www.sba.gov/sba-newsroom/",
       "feed_url": "https://www.sba.gov/feed/",
       "title": "",
-      "saved": 1,
+      "saved": 0,
       "method": "discovered"
     },
     {
@@ -21,9 +21,16 @@
       "title": "",
       "saved": 0,
       "method": "feed"
+    },
+    {
+      "source": "https://www.sba.gov/blog/feed/",
+      "feed_url": "https://www.sba.gov/blog/feed/",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
     }
   ],
-  "fetched": "2026-10-10T13:15:00Z",
-  "post_count": 1,
+  "fetched": "2026-10-17T14:53:57Z",
+  "post_count": 10,
   "agent_pulled": "2026-07-04"
 }
